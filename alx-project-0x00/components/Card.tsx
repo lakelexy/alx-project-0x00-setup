@@ -1,18 +1,23 @@
 import Image from "next/image";
-import HOUSE_IMAGE from "@/public/assets/house.png";
-import STAR_IMAGE from "@/public/assets/star.png";
+import HOUSE_IMAGE from "/assets/house.png"; // Correct path
+import STAR_IMAGE from "/assets/star.png";
 import React from "react";
 import Pill from "./Pill";
 
-const Card: React.FC = () => {
+const Card = () => {
   return (
-    <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
+    <div className="card">
       <Image
-        className="rounded-lg"
-        src={HOUSE_IMAGE}
-        width={378.56}
-        height={299.37}
-        alt="house image"
+        src="/assets/house.png" // Correct relative path for images in the public directory
+        alt="House"
+        width={500}
+        height={300}
+      />
+      <Image
+        src="/assets/star.png" // Correct relative path for images in the public directory
+        alt="Star"
+        width={500}
+        height={300}
       />
       <div className="p-2 flex gap-2 mt-2">
         <Pill title="Top Villa" />
@@ -29,7 +34,8 @@ const Card: React.FC = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" />
+          <Image src="/assets/house.png" alt="House" width={500} height={500} />
+          <Image src="/assets/star.pnp" alt="star" width={500} height={500} />
           <p className=" font-medium text=[17px] ml-2">4.76</p>
         </div>
       </div>
