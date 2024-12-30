@@ -1,0 +1,1 @@
+This project demonstrates how to create a Next.js application using both CLI tools like npx and the create-next-app tool. By following these instructions, you will have a fully set up Next.js application with TypeScript, Tailwind CSS, and ESLint configured, and ready for further development.
